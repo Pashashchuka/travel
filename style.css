@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400&family=Magra:wght@400;700&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Header start */
+
+.header {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.header__wrapper {
+  align-items: center;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  display: flex;
+  padding: 25px 120px 24px 120px;
+  justify-content: space-between;
+}
+
+.header__logo {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  font-family: "Magra";
+  font-weight: 600;
+  font-size: 32px;
+  gap: 6px;
+  justify-content: flex-start;
+}
+
+.logo {
+  color: #ffffff;
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.nav {
+  display: flex;
+  gap: 42px;
+}
+
+.nav__link {
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Red Hat Text", sans-serif;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #95bcee;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.login__button {
+  background-color: #0d606f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  height: 41px;
+  width: 103px;
+}
+
+.login__button:hover {
+  background-color: #32555a;
+  color: #95bcee;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+/* Header end */
+
+/* Preview start */
+
+.preview {
+  background-image: url(img/bgimg.jpg);
+  padding: 34px 0 0 120px;
+}
+
+.preview__content {
+  height: 700px;
+  padding-top: 66px;
+}
+
+.preview__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 422px;
+  justify-content: space-between;
+  padding-top: 32px;
+  width: 892px;
+}
+
+.preview__block {
+  color: #ffffff;
+  font-family: "Aleo";
+  font-weight: 700;
+}
+
+.preview__title {
+  font-size: 80px;
+}
+
+.preview__subtitle {
+  font-size: 20px;
+  padding: 46px 0 46px 0;
+}
+
+.preview__panel {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  display: flex;
+  height: 95px;
+  justify-content: space-between;
+  width: 892px;
+}
+
+.preview__question {
+  color: #f2785c;
+  font-family: "Aleo";
+  padding-left: 41px;
+}
+
+.preview__btn {
+  background-color: #0d606f;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  height: 59px;
+  margin-right: 18px;
+  width: 228px;
+}
+
+.preview__btn:hover {
+  background-color: #32555a;
+  color: #95bcee;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+/* Preview end */
+
+/* Steps start */
+
+.steps {
+  background-color: #ffffff;
+  padding: 0 240px 0 204px;
+}
+
+.steps__title {
+  color: #f2785c;
+  display: flex;
+  font-size: 25px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  padding: 80px 0 40px 0;
+}
+
+.steps__wrapper {
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__offers {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__img-bg {
+  align-items: center;
+  background-color: #f2785c;
+  border-radius: 16px;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+}
+
+.steps__img {
+  height: 45px;
+  width: 50px;
+}
+
+.steps__link {
+  color: #0d606f;
+  cursor: pointer;
+  display: flex;
+  font-family: "Aleo";
+  padding-top: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.steps__link:hover {
+  color: #95bcee;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+/* Steps end */
+
+/* Destinations start */
+
+.destinations {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.destinations__title {
+  color: #f2785c;
+  display: flex;
+  font-size: 25px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  padding: 97px 0 46px 0;
+}
+
+.destinations__wrapper {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.destinations__block {
+  position: relative;
+}
+
+.destinations__land {
+  bottom: 40px;
+  color: #ffffff;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  left: 15px;
+  position: absolute;
+}
+
+.destinations__img {
+  background: no-repeat center;
+  border-radius: 16px;
+  height: 800px;
+  width: 800px;
+}
+
+.destinations__vault {
+  display: flex;
+  justify-content: center;
+}
+
+.destinations__btn {
+  align-items: center;
+  background-color: #0d606f;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  flex-direction: row;
+  gap: 12px;
+  height: 59px;
+  justify-content: center;
+  margin-top: 84px;
+  width: 228px;
+}
+
+.destinations__btn:hover {
+  background-color: #32555a;
+  color: #95bcee;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.destinations__btn-img {
+  height: 22px;
+  width: 35px;
+}
+
+/* Destinations end */
+
+/* Stories start */
+
+.stories__title {
+  color: #f2785c;
+  display: flex;
+  font-size: 25px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  padding: 80px 0 40px 0;
+}
+
+.stories__bg-img {
+  background-image: url(img/lake.jpg);
+  opacity: 2;
+}
+
+.stories__wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.stories__block {
+  display: flex;
+  gap: 40px;
+  padding: 0 125px 0px 120px;
+}
+
+.stories__img {
+  border-radius: 16px;
+  filter: drop-shadow(0px 4px 4px #0d606f);
+  height: 250px;
+  margin-top: 30px;
+  width: 400px;
+}
+
+.stories__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+.stories__subtitle {
+  color: #0d606f;
+  font-family: "Aleo";
+  font-size: 30px;
+  padding-bottom: 24px;
+}
+
+.stories__text {
+  color: #0d606f;
+  font-family: "Aleo";
+  font-size: 20px;
+  width: 760px;
+}
+
+.stories__link {
+  color: #0d606f;
+  cursor: pointer;
+  font-family: "Aleo";
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.stories__link:hover {
+  color: #1f3147;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.stories__vault {
+  display: flex;
+  justify-content: center;
+}
+
+.stories__btn {
+  align-items: center;
+  background-color: #0d606f;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  gap: 12px;
+  height: 59px;
+  justify-content: center;
+  margin: 40px 0 41px 0;
+  width: 228px;
+}
+
+.stories__btn:hover {
+  background-color: #32555a;
+  color: #7571ac;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.stories__btn-img {
+  height: 22px;
+  width: 35px;
+}
+
+/* Stories end */
+
+/* Footer start */
+
+.footer__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 17px;
+}
+
+.footer__policy {
+  display: flex;
+  justify-content: center;
+  padding-top: 21px;
+}
+
+.footer__text {
+  color: #ffffff;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-right: 289px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+  padding-right: 120px;
+}
+
+.footer__soc-img {
+  height: 26px;
+  width: 30px;
+}
+
+/* Footer end */
