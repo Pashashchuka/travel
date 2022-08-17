@@ -172,7 +172,7 @@
 
 .steps {
   background-color: #ffffff;
-  padding: 0 240px 0 204px;
+  padding: 0 130px 0 130px;
 }
 
 .steps__title {
@@ -330,7 +330,6 @@
 
 .stories__bg-img {
   background-image: url(img/lake.jpg);
-  opacity: 2;
 }
 
 .stories__wrapper {
@@ -355,7 +354,6 @@
 .stories__content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   padding-top: 30px;
 }
 
@@ -370,7 +368,7 @@
   color: #0d606f;
   font-family: "Aleo";
   font-size: 20px;
-  width: 760px;
+
 }
 
 .stories__link {
