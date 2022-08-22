@@ -12,6 +12,7 @@
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+  width: 100%;
 }
 
 /* Header start */
@@ -28,8 +29,28 @@
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
   display: flex;
-  padding: 25px 120px 24px 120px;
+  padding: 25px 120px;
   justify-content: space-between;
+}
+@media (max-width: 1240px) {
+  .header__wrapper {
+    padding: 25px 60px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header__wrapper {
+    padding: 25px 30px;
+  }
+  .header__logo {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none !important;
+  }
 }
 
 .header__logo {
@@ -45,8 +66,8 @@
 
 .logo {
   color: #ffffff;
-  max-height: 30px;
-  max-width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 .nav {
@@ -113,6 +134,48 @@
   width: 892px;
 }
 
+@media (max-width: 1024px) {
+  .preview {
+    padding: 20px 30px 0 60px;
+  }
+  .preview__title {
+    width: 700px;
+    font-size: 30px;
+  }
+  .preview__panel {
+    width: 540px;
+  }
+}
+
+@media (max-width: 969px) {
+  .preview {
+    padding: 10px 15px 0 30px;
+  }
+  .preview__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .preview__title {
+    display: none;
+  }
+
+  .preview__subtitle {
+    display: none;
+  }
+
+  .preview__panel {
+    max-height: 70px;
+    height: 100%;
+    max-width: 700px;
+    width: 100%;
+  }
+  .preview__btn {
+    font-size: 12px !important;
+    max-width: 140px;
+    max-height: 40px;
+  }
+}
+
 .preview__block {
   color: #ffffff;
   font-family: "Aleo";
@@ -156,7 +219,7 @@
   font-weight: 500;
   font-size: 24px;
   height: 59px;
-  margin-right: 18px;
+  margin: 18px;
   width: 228px;
 }
 
@@ -351,6 +414,13 @@
   width: 400px;
 }
 
+@media (max-width: 1345px) {
+  .stories__img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
 .stories__content {
   display: flex;
   flex-direction: column;
@@ -368,7 +438,6 @@
   color: #0d606f;
   font-family: "Aleo";
   font-size: 20px;
-
 }
 
 .stories__link {
@@ -461,3 +530,41 @@
 }
 
 /* Footer end */
+
+/* Header__mobile start */
+
+/* .header__mobile {
+  display: none;
+} */
+
+.header__mobile-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__mobile-img {
+  width: 29px;
+  height: 30px;
+}
+
+.header__mobile-burger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header__mobile-menu {
+  width: 26px;
+  height: 3px;
+}
+
+/* Header__mobile end */
+
+@media (max-width: 700px) {
+  .header {
+    display: none;
+  }
+  .header__mobile {
+    display: block !important;
+  }
+}
